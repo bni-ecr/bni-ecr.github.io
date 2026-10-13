@@ -1,0 +1,21 @@
+{
+  "name": "BNI-ECR Network",
+  "fullName": "Early Career Researchers Network for Biological Nitrification Inhibition",
+  "email": "g.silvestrerocha@nioo.knaw.nl",
+  "coordinator": "Gabriel S. Rocha",
+  "founded": "12 November 2025",
+  "joinFormUrl": "",
+  "joinFormEmbedUrl": "",
+  "nav": [
+    { "label": "Home", "href": "index.html" },
+    { "label": "About BNI", "href": "about-bni.html" },
+    { "label": "The Network", "href": "about-network.html" },
+    { "label": "Activities", "href": "activities.html" },
+    { "label": "Members", "href": "members.html" },
+    { "label": "Events", "href": "events.html" },
+    { "label": "Resources", "href": "resources.html" },
+    { "label": "Contact", "href": "contact.html" }
+  ],
+  "joinLabel": "Join",
+  "_help": "Paste your Google Form link into joinFormUrl (and the embed link into joinFormEmbedUrl) to switch the Join page from the email fallback to the form."
+}

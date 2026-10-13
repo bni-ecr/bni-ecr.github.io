@@ -1,0 +1,21 @@
+[
+  {
+    "date": "2026-10",
+    "title": "Website launched",
+    "text": "[PLACEHOLDER: edit or replace this item in data/news.json.]",
+    "link": "",
+    "placeholder": true
+  },
+  {
+    "date": "2026-12-02",
+    "title": "BNI Frontiers: Early-Career Perspectives in Tsukuba",
+    "text": "Our session at the 6th International BNI Consortium Meeting. Programme subject to updates.",
+    "link": "events.html"
+  },
+  {
+    "date": "2025-11-12",
+    "title": "Network kick-off meeting held",
+    "text": "The first online meeting brought together early-career researchers working on BNI from several countries.",
+    "link": "events.html"
+  }
+]

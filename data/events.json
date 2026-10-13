@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tsukuba-2026",
+    "featured": true,
+    "status": "upcoming",
+    "title": "BNI Frontiers: Early-Career Perspectives",
+    "partOf": "6th International BNI Consortium Meeting",
+    "dateLabel": "Wednesday, 2 December 2026",
+    "time": "15:45–18:00",
+    "timezone": "Japan Standard Time (UTC+9)",
+    "start": "2026-12-02T15:45:00+09:00",
+    "end": "2026-12-02T18:00:00+09:00",
+    "location": "International Congress Center “EPOCHAL TSUKUBA”, Tsukuba, Japan",
+    "format": "In person",
+    "chairs": ["Gabriel S. Rocha", "Guntur V. Subbarao"],
+    "summary": "A session for early-career researchers to present their work, meet other BNI researchers and discuss future collaborations.",
+    "programme": [
+      { "time": "15:45", "item": "Welcome and introduction to the BNI-ECR Network" },
+      { "time": "", "item": "Up to six short oral presentations by early-career researchers (maximum 10 minutes each)" },
+      { "time": "≈17:00–18:00", "item": "Poster presentations, networking and coffee" }
+    ],
+    "note": "Programme subject to updates.",
+    "link": ""
+  },
+  {
+    "id": "next-network-meeting",
+    "featured": false,
+    "status": "upcoming",
+    "placeholder": true,
+    "title": "Next online network meeting",
+    "dateLabel": "Date to be announced",
+    "time": "",
+    "timezone": "",
+    "location": "Online",
+    "format": "Online",
+    "summary": "Network meetings take place roughly every two months, at rotating times to suit different time zones. [PLACEHOLDER: replace with the confirmed date, time and talks.]",
+    "programme": [],
+    "note": "",
+    "link": ""
+  },
+  {
+    "id": "kickoff-2025",
+    "featured": false,
+    "status": "past",
+    "title": "Network kick-off meeting",
+    "dateLabel": "12 November 2025",
+    "time": "21:00–22:15",
+    "timezone": "CET (UTC+1)",
+    "location": "Online",
+    "format": "Online",
+    "summary": "Introductions, mission and core values, proposed structure and activities, and discussion of next steps with the first group of members, whose institutions and research are based in countries including New Zealand, Ireland, Greece, Belgium, the Netherlands and Denmark.",
+    "programme": [],
+    "note": "",
+    "link": ""
+  }
+]
