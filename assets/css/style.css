@@ -196,3 +196,4 @@ section.block.soil { background: var(--soil-100); border-block: 1px solid #e0d3c
 .diagram { overflow-x: auto; }
 .diagram svg { min-width: 620px; }
 .two-col > *, .grid > * { min-width: 0; }
+.diagram img { display: block; width: 100%; min-width: 720px; height: auto; border-radius: 8px; }
