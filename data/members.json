@@ -21,12 +21,17 @@
   {
     "name": "Sam Stapley",
     "role": "Co-coordinator",
-    "institution": "[Institution to be confirmed]",
-    "country": "",
-    "stage": "",
-    "focus": "",
-    "system": "",
-    "expertise": [],
+    "institution": "Bioeconomy Science Institute",
+    "country": "New Zealand",
+    "stage": "PhD student",
+    "focus": "Effect of Epichloë fungal endophyte symbiosis on BNI capacity and soil N₂O emissions in perennial ryegrass.",
+    "system": "Perennial ryegrass (Lolium perenne) pastures",
+    "expertise": [
+      "Epichloë endophytes",
+      "Nitrifier culture assays",
+      "Soil N₂O emissions",
+      "Soil N dynamics"
+    ],
     "profileUrl": "",
     "profileLabel": "",
     "photo": "",
