@@ -52,7 +52,8 @@
         '</div>' +
         '<div><h2>Explore</h2><ul>' + links + '<li><a href="join.html">Join the network</a></li></ul></div>' +
         '<div><h2>Contact</h2><p>' + esc(site.coordinator) + ',<br>Founder and Co-coordinator<br>' +
-        '<a href="mailto:' + esc(site.email) + '">' + esc(site.email) + '</a></p></div></div>' +
+        '<a href="mailto:' + esc(site.email) + '">' + esc(site.email) + '</a>' +
+        (safeUrl(site.linkedinUrl) && site.linkedinUrl ? '<br><a href="' + esc(site.linkedinUrl) + '" rel="noopener">LinkedIn group</a>' : '') + '</p></div></div>' +
         '<div class="wrap fine"><p>The BNI-ECR Network is an early-career-researcher-led community. It is distinct from the International BNI Consortium. ' +
         'Institutional affiliations shown on this site are those of individual members and do not imply institutional ownership, sponsorship or endorsement.</p>' +
         '<p>© ' + new Date().getFullYear() + ' BNI-ECR Network</p></div>';
