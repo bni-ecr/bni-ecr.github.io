@@ -8,6 +8,9 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   };
+  // Text from the data files: *like this* is shown in italics (species and genus names).
+  var rich = function (s) { return esc(s).replace(/\*([^*\n]+)\*/g, '<em>$1</em>'); };
+  var plain = function (s) { return String(s == null ? '' : s).replace(/\*/g, ''); };
   var safeUrl = function (u) { return /^(https?:|mailto:|[\w./#?=&-]+$)/i.test(u || '') ? u : ''; };
   var getJSON = function (f) {
     return fetch('data/' + f).then(function (r) {
@@ -86,7 +89,7 @@
     var prog = '';
     if (ev.programme && ev.programme.length && !opts.compact) {
       prog = '<h4>Programme</h4><ul class="prog">' + ev.programme.map(function (p) {
-        return '<li>' + (p.time ? '<b>' + esc(p.time) + '</b> ' : '') + esc(p.item) + '</li>';
+        return '<li>' + (p.time ? '<b>' + esc(p.time) + '</b> ' : '') + rich(p.item) + '</li>';
       }).join('') + '</ul>';
     }
     var tag = ev.placeholder ? '<span class="tag tag-ph">Placeholder</span>' :
@@ -97,7 +100,7 @@
     return '<article class="card event' + (opts.featured ? ' event-featured' : '') + '">' +
       '<header>' + tag + (ev.partOf ? '<p class="kicker">Part of the ' + esc(ev.partOf) + '</p>' : '') +
       '<h3>' + esc(ev.title) + '</h3></header>' +
-      '<p>' + esc(ev.summary) + '</p><ul class="meta">' + meta.join('') + '</ul>' + prog +
+      '<p>' + rich(ev.summary) + '</p><ul class="meta">' + meta.join('') + '</ul>' + prog +
       (ev.note ? '<p class="note">' + esc(ev.note) + '</p>' : '') +
       (actions ? '<p class="actions">' + actions + '</p>' : '') + '</article>';
   }
@@ -121,13 +124,13 @@
     var avatar = m.photo ? '<img src="' + esc(m.photo) + '" alt="Photo of ' + esc(m.name) + '">' :
       '<span class="avatar-fallback" aria-hidden="true">' + (m.placeholder ? '+' : esc(initials)) + '</span>';
     var rows = [];
-    var add = function (k, v) { if (v) rows.push('<dt>' + k + '</dt><dd>' + esc(v) + '</dd>'); };
+    var add = function (k, v) { if (v) rows.push('<dt>' + k + '</dt><dd>' + rich(v) + '</dd>'); };
     add('Career stage', m.stage);
     add('Research focus', m.focus);
     add('Crop or system', m.system);
-    var tags = (m.expertise || []).map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('');
+    var tags = (m.expertise || []).map(function (t) { return '<li>' + rich(t) + '</li>'; }).join('');
     var link = safeUrl(m.profileUrl) ? '<p><a href="' + esc(m.profileUrl) + '" rel="noopener">' + esc(m.profileLabel || 'Profile') + ' →</a></p>' : '';
-    var search = [m.name, m.institution, m.country, m.stage, m.focus, m.system, (m.expertise || []).join(' ')].join(' ').toLowerCase();
+    var search = plain([m.name, m.institution, m.country, m.stage, m.focus, m.system, (m.expertise || []).join(' ')].join(' ')).toLowerCase();
     return '<article class="card member' + (m.placeholder ? ' is-placeholder' : '') + (m.featured ? ' is-featured' : '') + '" data-search="' + esc(search) + '">' +
       '<div class="avatar">' + avatar + '</div><div><h3>' + esc(m.name) + '</h3>' +
       (m.role ? '<p class="role">' + esc(m.role) + '</p>' : '') +
@@ -158,7 +161,7 @@
           return '<li>' + (safeUrl(i.url) ? '<a href="' + esc(i.url) + '" rel="noopener">' + esc(i.title) + '</a>' : esc(i.title)) +
             (i.note ? ' <span class="muted">' + esc(i.note) + '</span>' : '') + '</li>';
         }).join('');
-        return '<article class="card resource"><h3>' + esc(r.category) + '</h3><p>' + esc(r.description) + '</p>' +
+        return '<article class="card resource"><h3>' + esc(r.category) + '</h3><p>' + rich(r.description) + '</p>' +
           (items ? '<ul>' + items + '</ul>' : '<p class="empty">Nothing here yet. Members can suggest additions.</p>') + '</article>';
       }).join('');
     });
@@ -169,7 +172,7 @@
       var n = parseInt(el.getAttribute('data-news'), 10) || news.length;
       el.innerHTML = news.slice(0, n).map(function (x) {
         var t = '<h3>' + (safeUrl(x.link) ? '<a href="' + esc(x.link) + '">' + esc(x.title) + '</a>' : esc(x.title)) + '</h3>';
-        return '<article class="card news"><p class="kicker">' + esc(x.date) + (x.placeholder ? ' · placeholder' : '') + '</p>' + t + '<p>' + esc(x.text) + '</p></article>';
+        return '<article class="card news"><p class="kicker">' + esc(x.date) + (x.placeholder ? ' · placeholder' : '') + '</p>' + t + '<p>' + rich(x.text) + '</p></article>';
       }).join('');
     });
   }
