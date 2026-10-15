@@ -51,7 +51,7 @@
         '<div><img class="foot-logo" src="assets/img/logo-arc.png" alt="BNI-ECR: Early Career Researchers Network for Biological Nitrification Inhibition" width="180">' +
         '</div>' +
         '<div><h2>Explore</h2><ul>' + links + '<li><a href="join.html">Join the network</a></li></ul></div>' +
-        '<div><h2>Contact</h2><p>' + esc(site.coordinator) + ',<br>Founder and Coordinator<br>' +
+        '<div><h2>Contact</h2><p>' + esc(site.coordinator) + ',<br>Founder and Co-coordinator<br>' +
         '<a href="mailto:' + esc(site.email) + '">' + esc(site.email) + '</a></p></div></div>' +
         '<div class="wrap fine"><p>The BNI-ECR Network is an early-career-researcher-led community. It is distinct from the International BNI Consortium. ' +
         'Institutional affiliations shown on this site are those of individual members and do not imply institutional ownership, sponsorship or endorsement.</p>' +

@@ -1,13 +1,32 @@
 [
   {
     "name": "Gabriel S. Rocha",
-    "role": "Founder and Coordinator",
+    "role": "Founder and Co-coordinator",
     "institution": "Netherlands Institute of Ecology (NIOO-KNAW)",
     "country": "the Netherlands",
     "stage": "PhD candidate, Microbial Ecology",
     "focus": "Biological Nitrification Inhibition, plant–soil–microbe interactions, root exudates, soil microbiomes, metabolomics, nitrification and agricultural greenhouse-gas emissions.",
     "system": "",
-    "expertise": ["Root exudates", "Soil microbiomes", "Metabolomics", "Nitrification"],
+    "expertise": [
+      "Root exudates",
+      "Soil microbiomes",
+      "Metabolomics",
+      "Nitrification"
+    ],
+    "profileUrl": "",
+    "profileLabel": "",
+    "photo": "",
+    "featured": true
+  },
+  {
+    "name": "Sam Stapley",
+    "role": "Co-coordinator",
+    "institution": "[Institution to be confirmed]",
+    "country": "",
+    "stage": "",
+    "focus": "",
+    "system": "",
+    "expertise": [],
     "profileUrl": "",
     "profileLabel": "",
     "photo": "",
@@ -21,7 +40,10 @@
     "stage": "[Career stage]",
     "focus": "[Research focus. Profiles are added only with the member’s consent.]",
     "system": "[Crop or system]",
-    "expertise": ["[Method]", "[Area of expertise]"],
+    "expertise": [
+      "[Method]",
+      "[Area of expertise]"
+    ],
     "profileUrl": "",
     "profileLabel": "",
     "photo": "",
